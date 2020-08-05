@@ -1,0 +1,7 @@
+# Defaults
+default:
+  backend:
+    name: namoona
+  components:
+    blueprints:
+      - namoona.backend.rest
