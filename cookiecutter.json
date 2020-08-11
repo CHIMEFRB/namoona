@@ -1,5 +1,5 @@
 {
-    "backend-name": "namoona",
-    "author-name": "Shiny Brar",
-    "author-email": "charanjotbrar@gmail.com"
+    "backend": "namoona",
+    "author": "Shiny Brar",
+    "email": "charanjotbrar@gmail.com"
 }

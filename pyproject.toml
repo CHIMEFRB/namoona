@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "{{cookiecutter.backend-name}}"
+name = "{{cookiecutter.backend}}"
 version = "0.1.0"
-description = "Maestro Backend - {{cookiecutter.backend-name}}"
-authors = ["{{cookiecutter.author-name}} <{{cookiecutter.author-email}}>"]
+description = "Maestro Backend - {{cookiecutter.backend}}"
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 license = "MIT"
 
 [tool.poetry.dependencies]

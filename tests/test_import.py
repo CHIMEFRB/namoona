@@ -2,4 +2,4 @@
 # -*- coding: utf-8 -*-
 
 def test_import():
-	import {{cookiecutter.backend-name}}
+	import {{cookiecutter.backend}}

@@ -1,6 +1,6 @@
-site_name: {{cookiecutter.backend-name}}
-site_author: {{cookiecutter.author-name}}
-site_description: Maestro Backend = {{cookiecutter.backend-name}}
+site_name: {{cookiecutter.backend}}
+site_author: {{cookiecutter.author}}
+site_description: Maestro Backend = {{cookiecutter.backend}}
 copyright: Copyright &copy; 2016 - 2020 CHIME/FRB Collaboration
 
 
