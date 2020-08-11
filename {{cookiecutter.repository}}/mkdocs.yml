@@ -1,8 +1,8 @@
-site_name: Namoona
-site_author: Shiny Brar
-site_description: Maestro Backend Template
-repo_name: chimefrb/namoona
-repo_url: https://github.com/chimefrb/namoona
+site_name: {{cookiecutter.respository}}
+site_author: {{cookiecutter.author}}
+site_description: "Maestro Backend :: {{cookiecutter.backend}}"
+repo_name: chimefrb/{{cookiecutter.respository}}
+repo_url: "https://github.com/chimefrb/{{cookiecutter.respository}}"
 copyright: Copyright &copy; 2016 - 2020 CHIME/FRB Collaboration
 
 theme:
@@ -60,5 +60,4 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Getting Started: getting-started.md
-  - Backend: backend.md
+  - Home: index.md
