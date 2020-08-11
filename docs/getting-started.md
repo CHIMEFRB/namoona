@@ -4,12 +4,23 @@ starting point for new developers to write backends for CHIME/FRB Collaboration 
 
 ## Requirements
 
-In order to use [Maestro](https://github.com/CHIMEFRB/maestro) and this repository template you need to
-configure your GitHub account to use [SSH key](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+In order to use the [Maestro](https://github.com/CHIMEFRB/maestro) framework and this repository template you need to
+configure your GitHub account to use SSH keys. See the [official GitHub guidelines](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for more information.
 
 
 ## Dependencies
 
-```
-pip install cookiecutter
-```
+In order to use this template you need [`cookiecutter`](https://cookiecutter.readthedocs.io/en/1.7.2/) installed in your local python environment.
+
+=== "pip"
+	
+	```
+	pip install --user cookiecutter
+	```
+
+=== "conda"
+	
+	```
+	conda config --add channels conda-forge
+	conda install cookiecutter
+	```

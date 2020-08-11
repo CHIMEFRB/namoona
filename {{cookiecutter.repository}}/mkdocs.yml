@@ -1,8 +1,8 @@
-site_name: {{cookiecutter.respository}}
+site_name: {{cookiecutter.repository}}
 site_author: {{cookiecutter.author}}
 site_description: "Maestro Backend :: {{cookiecutter.backend}}"
-repo_name: chimefrb/{{cookiecutter.respository}}
-repo_url: "https://github.com/chimefrb/{{cookiecutter.respository}}"
+repo_name: chimefrb/{{cookiecutter.repository}}
+repo_url: "https://github.com/chimefrb/{{cookiecutter.repository}}"
 copyright: Copyright &copy; 2016 - 2020 CHIME/FRB Collaboration
 
 theme:
