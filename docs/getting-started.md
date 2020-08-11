@@ -1,5 +1,10 @@
-Namoona means a sample or template in Indo-Aryan languages. This repository is meant as a
-starting point for new developers to write backends for CHIME/FRB Collaboration utilizing
+===  "namūnā | noun"
+
+	```
+	sample, specimen, pattern or template in indo-aryan languages
+	```
+
+Namoona is meant to be a starting point for new developers to write backends for CHIME/FRB Collaboration utilizing the
 [Maestro](https://github.com/CHIMEFRB/maestro) framework.
 
 ## Requirements

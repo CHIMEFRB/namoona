@@ -60,7 +60,6 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Home: home.md
   - Getting Started: getting-started.md
   - Usage: usage.md
   - Backend: backend.md
