@@ -47,4 +47,4 @@ jobs:
         poetry install
     - name: Run Tests
       run: |
-        poetry run pytest --cov .
+        poetry run pytest

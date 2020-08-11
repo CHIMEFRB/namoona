@@ -1,0 +1,7 @@
+# Defaults
+default:
+  backend:
+    name: {{cookiecutter.backend-name}}
+  components:
+    blueprints:
+      - {{cookiecutter.backend-name}}.backend.rest
