@@ -61,4 +61,5 @@ markdown_extensions:
 
 nav:
   - Getting Started: getting-started.md
+  - Usage: usage.md
   - Backend: backend.md
