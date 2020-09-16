@@ -40,7 +40,7 @@ with README, license, or gitignore files.
 === "Push"
 
 	```
-	git remote add origin remote repository <URL>
+	git remote add origin <URL>
 	git remote -v
 	git push origin master
 	```
