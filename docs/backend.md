@@ -20,15 +20,12 @@ the following components for your backend.
         LICENCE					# Project Licence
         README.md 				# This file
 
-## Backend Configuration
+## Project Components
+When setting up a project with `namoona` the following components come pre-configured:
 
-## Continous Integration
-
-### Github Actions
-
-### Pre-Commit Configuration
-
-## Documentation
-
-## Testing
+  - *Backend Configuration* file for `maestro`
+  - *Continous Integration* setup via Github Actions
+  - *Pre-Commit Configuration* file
+  - *Documentation* setup via mkdocs
+  - *Testing* setup through pytest
 
