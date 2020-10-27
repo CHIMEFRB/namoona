@@ -1,6 +1,6 @@
 {
-    "Repository Name (On Github)": "namoona",
-    "Project (Python Compatible)": "namoona",
-    "Author": "Fogell McLovin",
-    "Email": "fogell.mclovin@hawaii-residents.com"
+    "respository": "On Github, e.g. frb-night",
+    "project": "Python compatible, e.g frb_night",
+    "author": "Fogell McLovin",
+    "email": "fogell.mclovin@hawaii-residents.com"
 }
