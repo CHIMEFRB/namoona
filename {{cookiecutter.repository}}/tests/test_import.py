@@ -2,4 +2,7 @@
 # -*- coding: utf-8 -*-
 
 def test_import():
-	import {{cookiecutter.backend}}
+	try:
+		import {{cookiecutter.project}}
+	except Exception as error:
+		raise(error)

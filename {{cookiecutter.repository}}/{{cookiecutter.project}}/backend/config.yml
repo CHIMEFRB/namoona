@@ -4,4 +4,4 @@ default:
     name: {{cookiecutter.backend}}
   components:
     blueprints:
-      - {{cookiecutter.backend}}.backend.rest
+      - {{cookiecutter.project}}.backend.rest
