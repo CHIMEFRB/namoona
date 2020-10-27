@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import seed
+from . import seed
 
 """Analysis consists of genereal purpose functions
 """
