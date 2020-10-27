@@ -1,7 +1,7 @@
 {
-    "repository": "On Github, e.g. frb-night",
-    "project_name": "Python compatible, e.g frb_night",
-    "backend_name": "",
+    "repository": "Name of the repository on Github, e.g. chime-frb-xcorr",
+    "project": "Python compatible name of the project, e.g xcorr",
+    "backend": "URL prefix for backend services, e.g. xcorr will yield API location of /maestro/xcorr",
     "author": "Fogell McLovin",
     "email": "fogell.mclovin@hawaii-residents.com"
 }
