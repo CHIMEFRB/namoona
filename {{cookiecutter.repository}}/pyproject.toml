@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "{{cookiecutter.backend}}"
-version = "0.1.0"
-description = "Maestro Backend - {{cookiecutter.backend}}"
+name = "{{cookiecutter.project}}"
+version = "{% now 'utc', '%Y.%m' %}-alpha.0"
+description = "CHIME/FRB Backend - {{cookiecutter.project}}"
 authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 license = "MIT"
 
