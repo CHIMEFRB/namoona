@@ -4,13 +4,11 @@
 	sample, specimen, pattern or template in indo-aryan languages
 	```
 
-Namoona is meant to be a starting point for new developers to write backends for CHIME/FRB Collaboration utilizing the
-[Maestro](https://github.com/CHIMEFRB/maestro) framework.
+Namoona is meant to be a starting point for new developers to write projects for CHIME/FRB Collaboration utilizing the [Maestro](https://github.com/CHIMEFRB/maestro) framework.
 
 ## Requirements
 
-In order to use the [Maestro](https://github.com/CHIMEFRB/maestro) framework and this repository template you need to
-configure your GitHub account to use SSH keys. See the [official GitHub guidelines](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for more information.
+In order to use the [Maestro](https://github.com/CHIMEFRB/maestro) framework and this repository template to work without issues, you need to attach a SSH key configure your GitHub account. See the [official GitHub guidelines](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) for more information. This is needed, because most packages used within the package are private.
 
 
 ## Dependencies

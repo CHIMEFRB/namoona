@@ -7,10 +7,11 @@ cookiecutter git+ssh://git@github.com/chimefrb/namoona.git
 At this point, you will be asked to enter the following parameter details,
 
 	
-	repository: <project-name> e.g. outrigger-xcorr
-	backend: <purpose> e.g. xcorr
-	author: <your name> e.g. Kanzi
-	email: <your email> e.g. kanzi@bonobo.org
+	repository [On Github, e.g. `chime-frb-night`]: chime-frb-night
+	project [Python Compatible, e.g. frb_night]: frb_night
+	backend [URL prefix for backend services, .e.g `night` will yield `/maestro/night`]: night
+	author [e.g. Fogell McLovin]: Fogell McLovin
+	email [e.g. fogell.mclovin@hawaii-residents.com]: fogell.mclovin@hawaii-residents.com
 
 This will generate a folder named `<project-name>` in your present working directory
 containining all the relevant files with the proper project layout.
@@ -34,7 +35,9 @@ with README, license, or gitignore files.
 
 	```
 	git add . # Adds the files in the local repository and stages them for commit.
-	git commit -m "Project Template from namoona"
+	pre-commit run --all-files
+	git commit -m "project template from namoona"
+	git branch -M main
 	```
 
 === "Push"
@@ -42,7 +45,7 @@ with README, license, or gitignore files.
 	```
 	git remote add origin <URL>
 	git remote -v
-	git push origin master
+	git push -u origin main
 	```
 
 
