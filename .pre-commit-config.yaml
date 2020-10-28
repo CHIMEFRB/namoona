@@ -12,3 +12,4 @@ repos:
       - id: end-of-file-fixer
         exclude: ^docs/*
       - id: debug-statements
+      - id: check-json

@@ -1,8 +1,8 @@
 {
-    "repository": "Name of the repository on Github, e.g. `chime-frb-night`",
-    "project": "Python compatible project name, e.g. frb_night",
-    "backend": "URL prefix for backend services, .e.g `night` will yield `/maestro/night`",
-    "author": "Name of the Author, e.g. Fogell McLovin",
-    "email": "Contact email for the author, e.g. fogell.mclovin@hawaii-residents.com",
+    "repository": "On Github",
+    "project": "Python Compatible",
+    "backend": "URL Prefix",
+    "author": "Name",
+    "email": "Contact Email",
     "_copy_without_render": [ ".github/workflows/*.yml"]
 }

@@ -7,11 +7,12 @@ cookiecutter git+ssh://git@github.com/chimefrb/namoona.git
 At this point, you will be asked to enter the following parameter details,
 
 	
-	repository [On Github, e.g. `chime-frb-night`]: chime-frb-night
-	project [Python Compatible, e.g. frb_night]: frb_night
-	backend [URL prefix for backend services, .e.g `night` will yield `/maestro/night`]: night
-	author [e.g. Fogell McLovin]: Fogell McLovin
-	email [e.g. fogell.mclovin@hawaii-residents.com]: fogell.mclovin@hawaii-residents.com
+	repository [On Github]: chime-frb-night
+	project [Python Compatible]: frb_night
+	backend [URL Prefix]: night
+    # This will yield in a url location of /maestro/night
+	author [Name]: Fogell McLovin
+	email [Contact Email]: fogell.mclovin@hawaii-residents.com
 
 This will generate a folder named `<project-name>` in your present working directory
 containining all the relevant files with the proper project layout.
