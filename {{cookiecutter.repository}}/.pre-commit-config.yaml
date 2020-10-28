@@ -1,8 +1,8 @@
 repos:
-  - repo: https://github.com/psf/black
-    rev: stable
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v2.3.5
     hooks:
-      - id: black
+    -   id: reorder-python-imports
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
     hooks:
@@ -13,14 +13,28 @@ repos:
       - id: flake8
         args: [--max-line-length=88]
       - id: debug-statements
-    # Check for files with names that would conflict on a case-insensitive
-    # filesystem like MacOS HFS+ or Windows FAT.
       - id: check-case-conflict
       - id: check-json
       - id: check-yaml
       - id: mixed-line-ending
       - id: check-toml
       - id: pretty-format-json
+      - id: check-docstring-first
+      - id: check-symlinks
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.7.2
+    hooks:
+    -   id: pyupgrade
+        args: [--py36-plus]
+  - repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 4.0.0  # pick a git hash / tag to point to
+    hooks:
+    -   id: pydocstyle
+        args: [--convention=numpy, --add-ignore=D104]
   - repo: https://github.com/asottile/blacken-docs
     rev: v1.8.0
     hooks:
@@ -35,8 +49,3 @@ repos:
     hooks:
     -   id: mypy
         args: [--ignore-missing-imports]
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v2.7.2
-    hooks:
-    -   id: pyupgrade
-        args: [--py36-plus]

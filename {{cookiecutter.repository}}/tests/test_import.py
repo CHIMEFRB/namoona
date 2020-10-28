@@ -1,14 +1,15 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+"""Generic tests for frb-datatrails."""
+import datatrail
+
 
 def test_project_import():
-	try:
-		import {{cookiecutter.project}}
-	except Exception as error:
-		raise(error)
+    """Simple check to test for package importability."""
+    assert isinstance(datatrail.__file__, str)
+
 
 def test_analysis_function():
-	from {{cookiecutter.project}}.analysis import seed
-	flavor = "str"
-	uuid = seed.get_uuid(flavor=flavor)
-	assert isinstance(uuid, str)
+    """Check if the seed function works."""
+    flavor = "str"
+    uuid = datatrail.analysis.seed.get_uuid(flavor=flavor)
+    assert isinstance(uuid, str)

@@ -1,27 +1,32 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
+"""Sample analysis functions."""
 import uuid
+from typing import Union
 
 
-def get_uuid(flavor: str = None):
-    """Generate a Universally Unique Identifier
+def get_uuid(flavor: str = None) -> Union[str, bytes]:
+    """Generate a Universally Unique Identifier.
 
-    Args:
-        flavor (str): Format of the uuid
+    Parameters
+    ----------
+    flavor : str, optional
+        flavor of the uuid, can be str, hex or bytes, by default None
 
-    Raises:
-        ValueError: Raised when flavor is not defined
+    Returns
+    -------
+    Union[str, bytes]
+        uuid
 
-    Returns:
-        [str, bytes]: uuid
+    Raises
+    ------
+    ValueError
+        Raised when uuid flavor is not defined
     """
     if flavor == "str":
-        seed = str(uuid.uuid1())
+        return str(uuid.uuid1())
     elif flavor == "hex":
-        seed = uuid.uuid1().hex
+        return uuid.uuid1().hex
     elif flavor == "bytes":
-        seed = uuid.uuid1().bytes
+        return uuid.uuid1().bytes
     else:
         raise ValueError("undefined flavor")
-    return seed

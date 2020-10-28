@@ -1,4 +1,6 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from . import analysis, backend, pipelines, routines, utilities
+from . import analysis  # noqa: F401
+from . import backend  # noqa: F401
+from . import pipelines  # noqa: F401
+from . import routines  # noqa: F401
+from . import utilities  # noqa: F401

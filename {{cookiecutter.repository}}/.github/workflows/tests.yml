@@ -4,7 +4,7 @@ on:
   push:
     paths-ignore:
       - 'docs/**'
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
     paths-ignore:
       - 'docs/**'
@@ -12,7 +12,7 @@ on:
       - '**'
 
 jobs:
-  Linting:
+  pre-commit-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -25,13 +25,16 @@ jobs:
           pip install pre-commit
           pre-commit run --all-files
 
-  Tests:
-    needs: Linting
+  tests:
+    needs: pre-commit-checks
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
+    - uses: webfactory/ssh-agent@v0.4.1
+      with:
+          ssh-private-key: ${{ secrets.CHIMEFRB_BOT_SSH_PRIVATE_KEY }}
     - name: Installation
       run: |
         pip install --upgrade pip
