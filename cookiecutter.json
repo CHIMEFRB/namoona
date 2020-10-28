@@ -3,5 +3,6 @@
     "project": "Python compatible project name, e.g. frb_night",
     "backend": "URL prefix for backend services, .e.g `night` will yield `/maestro/night`",
     "author": "Name of the Author, e.g. Fogell McLovin",
-    "email": "Contact email for the author, e.g. fogell.mclovin@hawaii-residents.com"
+    "email": "Contact email for the author, e.g. fogell.mclovin@hawaii-residents.com",
+    "_copy_without_render": [ ".github/workflows/*.yml"]
 }
