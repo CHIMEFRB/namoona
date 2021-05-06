@@ -1,7 +1,6 @@
 """Sample Compound Routine."""
-from {{cookiecutter.project}}.routines import composite
-from {{cookiecutter.project}}.routines import simple
 from {{cookiecutter.project}}.analysis.example import beta
+from {{cookiecutter.project}}.routines import composite, simple
 
 
 class Compound(composite.Composite, simple.Simple):
@@ -28,9 +27,19 @@ class Compound(composite.Composite, simple.Simple):
     """
 
     def __init__(self, maximum: float, minimum: float, flavor: str):
+        """Initialization.
+
+        Parameters
+        ----------
+        maximum : float
+        minimum : float
+        flavor : str
+            Flavor of seed, valid values are [str, hex, bytes]
+        """
         self.minimum = minimum
         self.maximum = maximum
         self.flavor = flavor
 
     def get_beta(self):
+        """Get random scaled value."""
         return beta.randomized(scale=self.maximum)

@@ -1,8 +1,7 @@
 """Sample RESTful Framework."""
 from sanic import Blueprint
 from sanic.request import Request
-from sanic.response import HTTPResponse
-from sanic.response import json
+from sanic.response import HTTPResponse, json
 from sanic_openapi import doc
 
 # NOTE: The URL Prefix for your backend has to be the name of the backend
@@ -46,7 +45,7 @@ async def get_seeder(request: Request) -> HTTPResponse:
 @doc.summary("Composite Routine")
 @blueprint.get("/composite")
 async def get_composite(request: Request) -> HTTPResponse:
-    """Run Composite Routine
+    """Run Composite Routine.
 
     Parameters
     ----------

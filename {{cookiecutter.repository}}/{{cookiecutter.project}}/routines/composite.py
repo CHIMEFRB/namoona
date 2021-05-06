@@ -1,6 +1,6 @@
 """Sample routine, using functions from multiple analysis locations."""
-from {{cookiecutter.project}}.analysis.example import alpha
 from math import floor, ceil
+from {{cookiecutter.project}}.analysis.example import alpha
 
 
 class Composite(object):

@@ -14,7 +14,7 @@ class Simple:
     """
 
     def __init__(self, flavor: str):
-        """Seeder Class
+        """Seeder Class.
 
         Parameters
         ----------

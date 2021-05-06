@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-click = ""
+click = "^7.1.0"
 maestro = {git = "ssh://git@github.com/CHIMEFRB/maestro.git", branch="main"}
 
 [tool.poetry.dev-dependencies]

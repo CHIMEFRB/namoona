@@ -1,3 +1,4 @@
+"""Sample Pipeline."""
 import click
 from {{cookiecutter.project}}.routines import composite
 
@@ -6,9 +7,11 @@ from {{cookiecutter.project}}.routines import composite
 @click.option("--minimum", default=0.1)
 @click.option("--maximum", default=10.0)
 def run(minimum, maximum):
+    """Execute Analysis Routine."""
     analysis = composite.Composite(maximum=maximum, minimum=minimum)
     print(analysis.seedling())
     print(analysis.get_alpha())
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     run()
