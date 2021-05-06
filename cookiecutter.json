@@ -1,8 +1,10 @@
 {
-    "repository": "On Github",
-    "project": "Python Compatible",
+    "repository": "Name of Repository (Github)",
+    "project": "Name of Python Package",
     "backend": "URL Prefix",
     "author": "Name",
     "email": "Contact Email",
-    "_copy_without_render": [ ".github/workflows/*.yml"]
+    "_copy_without_render": [
+        ".github/workflows/*.yml"
+    ]
 }

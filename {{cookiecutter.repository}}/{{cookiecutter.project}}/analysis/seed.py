@@ -1,16 +1,23 @@
-#!/usr/bin/env python
-"""Sample analysis functions."""
+"""
+Core Analysis Functions.
+
+Note
+----
+Analysis functions at the top-level are methods core to the repository,
+commonly used by multiple routines and required by default. For simpler projects,
+all analysis functions could be core.
+"""
 import uuid
 from typing import Union
 
 
-def get_uuid(flavor: str = None) -> Union[str, bytes]:
+def get_uuid(flavor: str = "str") -> Union[str, bytes]:
     """Generate a Universally Unique Identifier.
 
     Parameters
     ----------
     flavor : str, optional
-        flavor of the uuid, can be str, hex or bytes, by default None
+        Type of uuid, can be str, hex or bytes, by default str
 
     Returns
     -------
@@ -20,7 +27,7 @@ def get_uuid(flavor: str = None) -> Union[str, bytes]:
     Raises
     ------
     ValueError
-        Raised when uuid flavor is not defined
+        Raised when uuid flavor misconfigured.
     """
     if flavor == "str":
         return str(uuid.uuid1())
