@@ -4,6 +4,8 @@ from sanic.request import Request
 from sanic.response import HTTPResponse, json
 from sanic_openapi import doc
 
+from {{cookiecutter.project}}.routines import composite, simple
+
 # NOTE: The URL Prefix for your backend has to be the name of the backend
 blueprint = Blueprint("{{cookiecutter.project}} Backend", url_prefix="/")
 
@@ -26,7 +28,7 @@ async def hello(request: Request) -> HTTPResponse:
 
 
 @doc.summary("Seeder Routine")
-@blueprint.get("/seeder")
+@blueprint.get("/simple")
 async def get_seeder(request: Request) -> HTTPResponse:
     """Run Seeder Routine.
 
@@ -39,7 +41,8 @@ async def get_seeder(request: Request) -> HTTPResponse:
     -------
     HTTPResponse
     """
-    return json()
+    example = simple.Simple('hex')
+    return json(example.seedling())
 
 
 @doc.summary("Composite Routine")
@@ -56,4 +59,5 @@ async def get_composite(request: Request) -> HTTPResponse:
     -------
     HTTPResponse
     """
-    return json()
+    example = composite.Composite(1.0, 10.0, "hex")
+    return json(example.get_random_integer())
