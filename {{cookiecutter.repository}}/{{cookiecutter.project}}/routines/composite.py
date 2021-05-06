@@ -14,7 +14,7 @@ class Composite(object):
     >>> print(example.get_seed())
     """
 
-    def __init__(self, minimum: float, maximum: float):
+    def __init__(self, minimum: float, maximum: float, flavor: str):
         """Intialization.
 
         Parameters

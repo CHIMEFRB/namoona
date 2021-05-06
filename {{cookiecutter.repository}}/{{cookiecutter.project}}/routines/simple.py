@@ -3,13 +3,13 @@ from {{cookiecutter.project}}.analysis import seed
 from typing import Union
 
 
-class Seeder:
-    """Seeder.
+class Simple:
+    """Simple Seeder.
 
     Example
     -------
-    >>> from {{cookiecutter.project}}.routines import seeder
-    >>> seeds = seeder.Seeder(flavor="str")
+    >>> from {{cookiecutter.project}}.routines import simple
+    >>> seeds = simple.Simple(flavor="str")
     >>> print(seeds.seedling())
     """
 
@@ -31,6 +31,4 @@ class Seeder:
         str
             Random alpha-numeric seed.
         """
-        seedling = seed(flavor=self.flavor)
-        isinstance(seedling, str)
-        return seedling
+        return seed.get_uuid(flavor=self.flavor)
